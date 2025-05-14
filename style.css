@@ -1,0 +1,91 @@
+/* Element selector */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #d6f5d6, #a6d609);
+  color: #264d00; /* Dark green for text */
+  margin: 20px;
+  padding: 10px;
+  line-height: 1.6;
+}
+
+/* ID selector */
+#header {
+  text-align: center;
+  color: #4caf50; /* Lime green shade */
+  margin-bottom: 30px;
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px #9ccc65;
+}
+
+/* Class selector */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  max-width: 960px;
+  margin: 0 auto 40px;
+  padding: 10px;
+}
+
+/* Cards for paragraphs */
+.grid-item {
+  background-color: #e6f2d6;
+  border: 3px solid #89f336; /* bright lime green */
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 10px rgba(137, 243, 54, 0.3);
+  transition: box-shadow 0.3s ease;
+}
+
+.grid-item:hover {
+  box-shadow: 0 10px 20px rgba(137, 243, 54, 0.6);
+}
+
+/* Paragraph styling inside cards */
+.grid-item p {
+  font-size: 1.1rem;
+  color: #33691e;
+  margin-bottom: 1rem;
+}
+
+/* Buttons styling */
+button {
+  display: block;
+  width: 100%;
+  padding: 12px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(90deg, #32cd32, #89f336);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(50, 205, 50, 0.5);
+  transition: background 0.4s ease, box-shadow 0.4s ease;
+  margin-top: 15px;
+  font-family: inherit;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #aadd06, #32cd32);
+  box-shadow: 0 6px 14px rgba(137, 243, 54, 0.8);
+}
+
+/* Input styling */
+input[type="text"] {
+  width: 90%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 2px solid #89f336;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  color: #264d00;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #32cd32;
+  outline: none;
+}
